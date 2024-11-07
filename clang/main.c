@@ -82,5 +82,11 @@ int main() {
     printf("\n\nPipelined ICP ex %d clock cycles to complete the program execution\n", 
            clockCyclesWithPipeline);
     
+    // Add before pipeline visualization
+    printf("\nValues in registers after execution:\n");
+    for (int i = 0; i < 8; i++) {
+        printf("r%d   %d\n", i, registers[i].value);
+    }
+    
     return 0;
 } 
